@@ -1,3 +1,3 @@
 //declaramos variables con los tipos primitivos
-var num = 12;
+var let = 12;
 console.log(num);
