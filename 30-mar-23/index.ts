@@ -9,4 +9,5 @@ function esPalindromo(texto: string): boolean {
   
   console.log(esPalindromo(texto1)); // true
   console.log(esPalindromo(texto2)); // true
-  console.log(esPalindromo(texto3)); // fals  
+  console.log(esPalindromo(texto3)); // false
+  
