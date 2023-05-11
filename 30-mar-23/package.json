@@ -2,6 +2,7 @@
   "dependencies": {
     "@types/node": "^18.15.11",
     "@types/readline-sync": "^1.4.4",
+    "pdfkit": "^0.13.0",
     "readline-sync": "^1.4.10"
   }
 }
