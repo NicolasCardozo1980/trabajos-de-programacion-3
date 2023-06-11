@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tareas y Galería de Imágenes</title>
+  <style>
+    /* Estilos CSS */
+    body {
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .image-gallery img {
+      width: 200px;
+      height: auto;
+      margin: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .task-list {
+      margin-top: 40px;
+    }
+
+    .task-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .task-item .task-text {
+      flex-grow: 1;
+      margin-right: 10px;
+    }
+
+    .priority-high {
+      color: red;
+      font-weight: bold;
+    }
+
+    .priority-medium {
+      color: orange;
+      font-weight: bold;
+    }
+
+    .priority-low {
+      color: green;
+      font-weight: bold;
+    }
+
+    .delete-button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .delete-button:hover {
+      transform: scale(1.2);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    /* Animaciones de iconos */
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    /* Estilos de iconos animados */
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes bounce {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><i class="fas fa-images"></i> Mi Galería</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery"><i class="fas fa-images"></i> Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="gallery">
+      <h2><i class="fas fa-images"></i> Galería de Imágenes</h2>
+      <div class="image-gallery">
+        <img src="https://plus.unsplash.com/premium_photo-1667251759217-45e2eec2e38e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=400&q=60" alt="Imagen 1">
+        <img src="https://images.unsplash.com/photo-1523465219434-53d659a92880?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=400&q=60" alt="Imagen 2">
+        <img src="https://images.unsplash.com/photo-1524862775939-aa7fa9570dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=400&q=60" alt="Imagen 3">
+      </div>
+    </section>
+
+    <section id="about">
+      <h2><i class="fas fa-info-circle"></i> Acerca de</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus finibus est, vel fringilla nisl malesuada id. Pellentesque id cursus ligula. Sed sit amet dui eget urna sodales placerat. Etiam sed lectus nec sapien cursus tincidunt vitae nec risus. Ut vitae semper erat.</p>
+    </section>
+
+    <section id="contact">
+      <h2><i class="fas fa-envelope"></i> Contacto</h2>
+      <form>
+        <div class="form-group">
+          <label for="name"><i class="fas fa-user"></i> Nombre:</label>
+          <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+        </div>
+        <div class="form-group">
+          <label for="message"><i class="fas fa-comment"></i> Mensaje:</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Ingrese su mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Enviar</button>
+      </form>
+    </section>
+
+    <section>
+      <h1><i class="fas fa-tasks"></i> Lista de Tareas</h1>
+      <div class="form-group">
+        <input type="text" class="form-control" id="taskInput" placeholder="Agregar una tarea (Presiona Enter)">
+      </div>
+      <div class="task-list">
+        <ul id="taskList" class="list-group">
+          <li class="list-group-item">
+            <div class="task-item">
+              <span class="task-text">Tarea 1</span>
+              <button class="delete-button"><i class="fas fa-trash"></i></button>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="task-item">
+              <span class="task-text">Tarea 2</span>
+              <button class="delete-button"><i class="fas fa-trash"></i></button>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="task-item">
+              <span class="task-text">Tarea 3</span>
+              <button class="delete-button"><i class="fas fa-trash"></i></button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // JavaScript Code
+    $(document).ready(function () {
+      // Agregar tarea al presionar Enter
+      $("#taskInput").keypress(function (event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          var taskText = $(this).val();
+          if (taskText !== "") {
+            var listItem = $("<li>", {
+              class: "list-group-item"
+            });
+            var taskItem = $("<div>", {
+              class: "task-item"
+            });
+            var taskTextSpan = $("<span>", {
+              class: "task-text",
+              text: taskText
+            });
+            var deleteButton = $("<button>", {
+              class: "delete-button"
+            }).html('<i class="fas fa-trash"></i>');
+            taskItem.append(taskTextSpan);
+            taskItem.append(deleteButton);
+            listItem.append(taskItem);
+            $("#taskList").append(listItem);
+            $(this).val("");
+          }
+        }
+      });
+
+      // Eliminar tarea al hacer clic en el botón de eliminar
+      $(document).on("click", ".delete-button", function () {
+        $(this).closest("li").remove();
+      });
+    });
+  </script>
+</body>
+
+</html>
