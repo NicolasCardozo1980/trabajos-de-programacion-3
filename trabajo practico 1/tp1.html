@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tp1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>TRABAJO PRACTICO N1</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>DEJANDO HUELLAS ZAPATERIA</h1>
+      <nav>
+        <ul>
+          <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+          <li><a href="#"><i class="fas fa-info-circle"></i> Acerca de</a></li>
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-envelope"></i> Contacto</a>
+            <ul class="dropdown-menu">
+              <li><a href="contacto.html"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+              <li><a href="contacto.html"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h2>NECOCHEA BS AS</h2>
+        <form id="form-pregunta">
+          <input type="text" id="pregunta" placeholder="INGRESA LA PREGUNTA" required>
+          <button type="submit">Agregar Pregunta</button>
+        </form>
+      </div>
+    </section>
+    
+    <section>
+      <div class="container">
+        <h2>la Mejor calidad</h2>
+        <ul id="lista-preguntas"></ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Modelos en stock</h2>
+        <h3>Galeria Cosega local 4</h3>
+        <div class="gallery">
+          <div class="product">
+            <img src="zapatillas_nike_1.jpeg" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>Precio: $10</p>
+          </div>
+          <div class="product">
+            <img src="zapatillas_nike_2.jpeg" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>Precio: $15</p>
+          </div>
+          <div class="product">
+            <img src="zapatillas_nike_3.jpeg" alt="Producto 3">
+            <h3>Producto 3</h3>
+            <p>Precio: $20</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 DERECHOS RESERVADOS A NICO</p>
+      <a href="https://api.whatsapp.com/send?phone=5492262515244"><img src="logo_zapateria.jpeg" alt="Logo Zapatería" style="width: 50px; height: 50px;"></a>
+      <a href="https://api.whatsapp.com/send?phone=5492262515244"><img src="logo_zapateria.jpeg" alt="Logo Zapatería" style="width: 50px; height: 50px;"></a>
+      <a href="https://instagram.com/dejandohuellasneg"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+  
+  <div id="snackbar">Redirigiendo a la página de precios...</div>
+  
+  <script src="tp1.js"></script>
+</body>
+</html>

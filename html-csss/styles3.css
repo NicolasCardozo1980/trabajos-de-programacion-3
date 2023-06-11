@@ -1,0 +1,35 @@
+
+
+body {
+    padding: 20px;
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+
+  
+  .card {
+    width: 18rem;
+    margin-bottom: 20px;
+  }
+  
+ /
+  
+  .btn-primary {
+    margin-bottom: 20px; glyph-orientation-vertical: auto;
+  }
+  
+  
+  .carousel-item {
+    height: 400px;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+  
+ 
+  

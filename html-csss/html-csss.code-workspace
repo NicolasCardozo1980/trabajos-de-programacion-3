@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "30-mar-23",
+			"path": "../../../30-mar-23"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html-csss"
+	}
+}

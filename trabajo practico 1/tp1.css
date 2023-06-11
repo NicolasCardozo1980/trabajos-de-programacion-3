@@ -1,0 +1,20 @@
+/* Estilos para las imágenes de productos */
+.product img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Estilos para los cuadros de texto de preguntas */
+.container #lista-preguntas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container #lista-preguntas li {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  list-style-type: none;
+}

@@ -1,0 +1,89 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-gap: 10px;
+    height: 100vh;
+    padding: 10px;
+  }
+  
+  .encabezado {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #1f77b4;
+    color: white;
+    padding: 10px;
+  }
+  
+  .logo {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #2ca02c;
+    color: white;
+    padding: 10px;
+  }
+  
+  .menu {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: #d62728;
+    color: white;
+    padding: 10px;
+  }
+  
+  .menu-dos {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #808080;
+    color: white;
+    padding: 10px;
+  }
+  
+  .izquierda1 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    background-color: #17becf;
+    color: white;
+    padding: 10px;
+  }
+  
+  .izquierda-2 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background-color: #ff7f0e;
+    color: white;
+    padding: 10px;
+  }
+  
+  .centro {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    background-color: #9467bd;
+    color: white;
+    padding: 10px;
+  }
+  
+  .derecha {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-color: #ffbb78;
+    color: white;
+    padding: 10px;
+  }
+  
+  .derecha-2 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    background-color: #ff7f0e;
+    color: white;
+    padding: 10px;
+  }
+  
+  .pie {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    background-color: #808080;
+    color: white;
+    padding: 10px;
+  }
+  

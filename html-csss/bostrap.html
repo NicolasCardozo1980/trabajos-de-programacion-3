@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles3.css">
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+    .card {
+      margin-top: 20px;
+    }
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="btn-container">
+    <span class="btn btn-primary">Soy un botón</span>
+  </div>
+
+  
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://picsum.photos/200/300" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cámara de fotos</h5>
+            <p class="card-text">Cámara de fotos analógica del año 1985.</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="container">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/200/300?random=1" class="d-block w-100" alt="Foto de flor">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/200/300?random=2" class="d-block w-100" alt="Foto de auto">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/200/300?random=3" class="d-block w-100" alt="Foto de cámara">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3
+</body>
+</html>
+```
